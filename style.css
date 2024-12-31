@@ -180,6 +180,10 @@
     font-size: 0.8rem;
 }
 
+.card-body{
+    height: 220px;
+  }    
+
 }
 
 @media only screen and (min-height:1024px){
