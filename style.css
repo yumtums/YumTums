@@ -1,0 +1,159 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#logo{
+    
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+
+}
+
+
+.main-container{
+    background-color: #000035;
+    height: 100%;
+    
+}
+
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.home-col-1{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-col-2{
+    height: 90vh;
+}
+
+.home-img{
+    background-image: url("home-img.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: rotate 7s linear infinite;
+}
+
+.item-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.home-text{
+    color: white;
+}
+
+.footer{
+    color: white;
+    height: 200px;
+}
+
+@media only screen and (max-width:700px) {
+
+    .main-container{
+        background-color: #000035;
+        height: 50vh;
+        width: 100%;
+        
+    }
+
+    .home-img{
+        display: none;
+    }
+    .home-col-2{
+        display: none;
+    }
+    .home-col-1 div{
+        width: 430px;
+        margin-bottom: 230px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   .item-row{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .item-img{
+    height: 250px;
+    width: 100%;
+    border-radius: 0%;
+}
+
+#logo{
+    
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+}
+
+@media only screen and (min-height:1024px){
+    .home-col-1, .home-col-2{
+        height: 60vh;
+    }
+
+    .item-row{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 100%;
+       }
+    
+       .item-img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #food-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     .item-col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+
+     .item-card{
+        width: 100%;
+     }
+
+     #logo{
+    
+        font-size: 2rem;
+        font-weight: 400;
+     }
+}
+
